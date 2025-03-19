@@ -1,0 +1,141 @@
+/* Підключаємо шрифт Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*the main styles*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--grey-900);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 20px;
+    
+    
+}
+
+/*the main container*/
+
+.container{
+    max-width: 375px;
+    max-height: 700px;
+
+    padding: 20px;
+    margin: auto;
+
+    background-color: var(--grey-800);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.profile-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin: 20px 0;
+}
+
+
+/*the heading*/
+h1, h2{
+    margin: 10px 0;
+    padding: 0;
+    color: var(--white);
+    text-align: center;
+}
+
+p{
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.location{
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*the links*/
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links a{
+    padding: 12px;
+    background-color: var(--grey-700);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+/*the footer*/
+.attribution{
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+}
+.attribution a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+
+
+/*the mobile version*/
+
+@media screen and (max-width: 375px) {
+    .container{
+        flex-direction: column;
+    }
+}
